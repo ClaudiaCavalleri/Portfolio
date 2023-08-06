@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "amsterdam";
+    src: url("./assets/font/amsterdam-font/Amsterdam-ZVGqm.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "Andika";
+    src: url("./assets/font/Andika/Andika-Regular.ttf") format("woff");
+}
+
+@font-face {
+    font-family: "Mark";
+    src: url("./assets/font/Marck_Script/MarckScript-Regular.ttf") format("woff");
+}
+
+:root {
+    --beige: #c8ad7f;
+}
+
+body {
+    background-image: url(./assets/img/WhiteDesktop.jpg);
+    background-position: top center;
+    background-size: cover;
+    color: var(--beige);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: var(--beige);
+}
+
+.navbar-brand {
+    margin: 0 10px;
+}
+
+main {
+    margin: 50px 0;
+}
+
+.home-container {
+    margin: 50px 10px;
+}
+
+#main-description > h1 {
+    font-family: "Andika", sans-serif;
+    font-size: 30px;
+    color: var(--beige);
+    padding: 1,5rem;
+}
+
+.different {
+    display: block;
+    font-family: "Mark", cursive;
+    font-size: 70px;
+    padding: 0.5rem;
+}
+
+h1, h2 {
+    font-family: "Andika", courier;
+    font-size: 35px;
+    color: var(--beige);
+    padding-top: 20px;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+.sections-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sections-container > h2 {
+    font-family: "Andika", sans-serif;
+    color: var(--beige);
+    font-size: 30px;
+    text-align: center;
+    width: 300px;
+    padding: 10px 0;
+    border: 1px solid var(--beige);
+}
+
+.card { 
+    max-width: 200px;
+    margin: 0 auto;
+    display: inline-block;
+    height: 60px;
+    line-height: 50px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+#portfoliocard {
+    max-width: 500px;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item {
+    width: 500px;
+    background-color: #f6e5c9;
+    margin: 20px;
+    padding: 30px;
+}
+
+.tecnologies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tecnologies > small {
+    padding: 0 10px;
+}
+
+.background-container {
+    width: 600px;
+    text-align: left;
+    background-color: #f6e5c9;
+}
+
+.background-container > ul {
+    list-style: none;
+}
+
+li {
+    padding: 20px;
+}
+
+@media only screen and (min-width:600px) and (max-width: 900px) {
+    main > .container-sm h1 {
+        font-size: 25px;
+    }
+    #social-link {
+        display: none;
+    }
+    .social > h3 {
+        font-size: small;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    #social-link {
+        display: none;
+    }
+    .social > h3 {
+        font-size: small;
+    }
+}
