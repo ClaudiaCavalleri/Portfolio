@@ -20,12 +20,13 @@
 }
 
 :root {
+    --white: #FFFFFF;
     --beige: #c8ad7f;
+    --lightbeige: #f6e5c9;
 }
 
 body {
-    background-image: url(./assets/img/WhiteDesktop.jpg);
-    background-position: top center;
+    background: url(./assets/img/WhiteDesktop.jpg) no-repeat top center fixed;
     background-size: cover;
     color: var(--beige);
 }
@@ -95,13 +96,21 @@ h1, h2 {
 }
 
 .card { 
-    max-width: 200px;
+    width: 150px;
     margin: 0 auto;
     display: inline-block;
     height: 60px;
     line-height: 50px;
-    padding: 10px 30px;
+    padding: 10px 10px;
     text-decoration: none;
+}
+
+.card img {
+    width: 70px;
+}
+
+.card-body {
+    padding: 0;
 }
 
 #portfoliocard {
@@ -114,11 +123,13 @@ h1, h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    color: var(--beige);
 }
 
 .portfolio-item {
-    width: 500px;
-    background-color: #f6e5c9;
+    width: 300px;
+    background-color: var(--white);
+    border: 1px solid var(--beige);
     margin: 20px;
     padding: 30px;
 }
@@ -134,18 +145,9 @@ h1, h2 {
     padding: 0 10px;
 }
 
-.background-container {
-    width: 600px;
-    text-align: left;
-    background-color: #f6e5c9;
-}
-
-.background-container > ul {
-    list-style: none;
-}
-
-li {
-    padding: 20px;
+.contact-container {
+    width: 300px;
+    
 }
 
 @media only screen and (min-width:600px) and (max-width: 900px) {
@@ -158,6 +160,12 @@ li {
     .social > h3 {
         font-size: small;
     }
+    .portfolio-item {
+        width: 500px;
+    }
+    .contact-item {
+        width: 500px;
+    }
 }
 
 @media only screen and (min-width: 901px) {
@@ -166,5 +174,11 @@ li {
     }
     .social > h3 {
         font-size: small;
+    }
+    .portfolio-item {
+        width: 500px;
+    }
+    .contact-item {
+        width: 500px;
     }
 }
